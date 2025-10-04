@@ -6,6 +6,62 @@
     <title>What's the Weather</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1>🌤️ Weather Dashboard</h1>
+        </div>
+
+        <div class="controls">
+            <div class="form-group">
+                <label for="cityInput">Enter City Name</label>
+                <input type="text" id="cityInput" class="city-input" placeholder="e.g., London, New York, Tokyo">
+            </div>
+            
+            <button id="searchBtn" class="search-btn">Get Weather</button>
+            
+            <div class="preset-cities">
+                <button class="preset-btn" data-city="London">London</button>
+                <button class="preset-btn" data-city="New York">New York</button>
+                <button class="preset-btn" data-city="Tokyo">Tokyo</button>
+                <button class="preset-btn" data-city="Paris">Paris</button>
+                <button class="preset-btn" data-city="Sydney">Sydney</button>
+            </div>
+
+            <div class="temp-toggle">
+                <span>°C</span>
+                <div class="toggle-switch" id="tempToggle">
+                    <div class="toggle-slider"></div>
+                </div>
+                <span>°F</span>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-icon" id="weatherIcon">☀️</div>
+            <div class="city-name" id="cityName">London, UK</div>
+            <div class="temperature" id="temperature">18°C</div>
+            <div class="condition" id="condition">Clear</div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value" id="humidity">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Wind Speed</div>
+                    <div class="detail-value" id="windSpeed">12 km/h</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error" id="error">
+            City not found. Please try another city.
+        </div>
+    </div>
 </body>
 </html>
