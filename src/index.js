@@ -1,3 +1,5 @@
+import "./styles.css";
+
 // Static weather database
 const weatherDatabase = {
     "London": {
