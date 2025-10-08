@@ -246,3 +246,32 @@ body {
     display: block;
     animation: shake 0.5s ease;
 }
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.preset-cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.preset-btn {
+    padding: 0.5rem 1rem;
+    background: rgba(116, 185, 255, 0.2);
+    border: 1px solid #74b9ff;
+    border-radius: 20px;
+    color: #0984e3;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.preset-btn:hover {
+    background: #74b9ff;
+    color: white;
+}
