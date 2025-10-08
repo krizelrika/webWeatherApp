@@ -227,3 +227,22 @@ body {
     animation: spin 1s linear infinite;
     margin: 0 auto 1rem;
 }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error {
+    background: rgba(231, 76, 60, 0.9);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: none;
+}
+
+.error.show {
+    display: block;
+    animation: shake 0.5s ease;
+}
