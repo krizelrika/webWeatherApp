@@ -275,3 +275,20 @@ body {
     background: #74b9ff;
     color: white;
 }
+
+/* Weather condition themes */
+.theme-clear {
+    background: linear-gradient(135deg, #fdcb6e, #e17055);
+}
+
+.theme-rainy {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+}
+
+.theme-cloudy {
+    background: linear-gradient(135deg, #b2bec3, #636e72);
+}
+
+.theme-snowy {
+    background: linear-gradient(135deg, #81ecec, #74b9ff);
+}
